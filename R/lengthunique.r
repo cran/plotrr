@@ -5,12 +5,10 @@
 #'@param x A vector.
 #'@return The number of unique values in a vector.
 #'@examples
-#'\dontrun{
 #'x <- rep(c(1:10), 10)
-#'length.unique(x)
-#'}
-#'@export
+#'lengthunique(x)
+#'@export lengthunique
 
-length.unique <- function(x) {
+lengthunique <- function(x) {
   length(unique(x[!is.na(x)]))
 }

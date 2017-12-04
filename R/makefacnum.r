@@ -5,16 +5,14 @@
 #'@param x A vector.
 #'@return A numeric vector.
 #'@examples
-#'\dontrun{
-#'x <- c("x", "y", "z")
+#'x <- c("1", "2", "3")
 #'x <- as.factor(x)
 #'x
 #'x <- makefacnum(x)
 #'x
 #'is.numeric(x)
-#'}
 #'@export
 
 makefacnum <- function(x) {
-  x <- as.numeric(as.character(x))
+  as.numeric(as.character(x))
 }
